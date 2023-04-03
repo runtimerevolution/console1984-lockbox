@@ -1,0 +1,6 @@
+validations:
+  forbidden_reopening:
+    - Lockbox
+  forbidden_constant_reference:
+    protected:
+      - Lockbox
