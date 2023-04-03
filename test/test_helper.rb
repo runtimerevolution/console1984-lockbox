@@ -8,7 +8,10 @@ require "rails/test_help"
 require "mocha/minitest"
 require "minitest/mock"
 require "parser/current"
-require "activeresource"
+
+require_relative "support/io_stream_test_helper"
+require_relative "support/audit_helpers"
+require_relative "support/supervised_test_console"
 
 # Filter out the backtrace from minitest while preserving the one from other libraries.
 Minitest.backtrace_filter = Minitest::BacktraceFilter.new
